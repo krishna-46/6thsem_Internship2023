@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3</title>
+</head>
+<body>
+
+    <script>
+      let abc=[   {name:"pen 1 ",category : "Gelpen" , price:"₹5"},
+                  {name:"pen 2",category : "Ballpen" ,price:"₹10"},
+                  {name:"pen 3",category : "Gelpen" , price:"₹15"}]
+      
+
+      
+      let table=document.createElement("table")
+      document.body.append(table)  
+                
+                
+      function f1(abc){
+        abc.map(product=>{
+          let tr1=document.createElement("tr")
+          table.append(tr1)
+
+          let td1=document.createElement("td")
+          td1.innerHTML=product.name
+          tr1.append(td1)
+          let td2=document.createElement("td")
+          tr1.append(td2)
+          td2.innerHTML+=product.category
+          let td3=document.createElement("td")
+                    tr1.append(td3)
+                    td3.innerHTML+=product.price
+
+            })
+
+          }
+                  f1(abc)
+
+                  
+                    // let fil=op.filter((f1)=>{
+                    //   return 
+                    // })
+                    
+                    
+
+                  
+                    
+                    // addEventListener
+                    
+                    
+                    
+                  let sel=document.createElement("select")
+                  document.body.append(sel)
+                 
+                              abc.map((op)=>{
+                      let o1=document.createElement("option")
+                                o1.innerHTML=op.category
+                      sel.append(o1)
+                              
+                    })
+                    sel.addEventListener("change",(e1)=>{
+                              let cate=e1.target.value;
+                     let pr=abc.filter((pr1)=>{
+                      pr1.category==cate;
+                              })
+                    f1(pr);
+                  });
+
+
+
+          </script>
+</body>
+</html>

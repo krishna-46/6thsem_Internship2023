@@ -1,0 +1,46 @@
+<html>
+
+	<head>
+		<script> 
+			
+				function by_class(){
+								let name_1=document.getElementsByClassname("name1")[0];
+										document.getElementById("clas").innerHTML=name_1;
+								
+								let email_1=document.getElementsByClassname("email1")[0];
+										document.getElementById("clas").innerHTML=email_1;
+
+
+							}
+
+
+		</script>
+
+
+
+
+
+	</head>
+
+
+	<body>
+
+		<form>
+			<lable>name : </lable>
+				<input class="name1" type="name">
+			<lable> email : </lable>
+				<input class="email1" type="email">
+
+
+
+
+			<button onclick=" "> click hrae </button>
+
+		 </form>
+
+		<p id="clas"></p>
+	
+
+	</body>
+
+</html

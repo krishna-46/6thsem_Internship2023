@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function c1(){
+            let cl=document.getElementsByClassName("ccc")[0];
+            if(cl.checked){
+                document.getElementById("check").innerHTML=cl.value;
+            }
+            document.getElementsByClassName("ccc")[1].innerHTML="Hello";
+            
+        }
+    </script>
+</head>
+<body>
+
+    <input type="text" class="abc">
+
+    <p class="abc">ABChgskhfjahsdjgfkhsjdfhih</p> 
+
+    <input type="checkbox" class="ccc" value="Maths"> maths
+    <br> <br>
+    <input type="checkbox" class="ccc"> science <br> <br>
+
+
+
+
+    <button onclick="c1()">click hear</button>
+    <p id="check"></p>
+    <p id="aa"></p>
+</body>
+</html>

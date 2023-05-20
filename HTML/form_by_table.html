@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>form by table</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+    <script>
+        function f2(){
+
+            let a = document.getElementById("b").value;
+            document.getElementById("b").innerHTML=a;
+
+        }
+    </script>
+        
+
+
+</head>
+<body>
+    
+    <h1 style="color:blueviolet;">Form in table </h1>
+    <h2 id="aa" class="abc backg">welcome to techify india</h2>
+    <caption > Please give ur informaction below </caption> <br> <br>
+
+    
+<form >
+    <table >
+        
+        
+            <th colspan="10">login Detail</th>
+            <tr>
+            <th class="abc backg">label</th>
+            <th class="abc"> input box</th>
+            </tr>
+            
+        <tr>
+            <td> name : </td> 
+            <td ><input id="b" type="text " ></td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td><input type="email :"></td>
+        </tr>
+        <tr>
+            <td>Phone no : </td>
+            <td><input type="number" accept="number"></td>
+        </tr>
+
+        <tr>
+            <td id="address">address :</td>
+            <td><textarea> </textarea></td>
+        </tr>
+        <tr>
+            <td>gender : </td>
+            <td><input type="radio" name="abc">Male</input>
+            <input type="radio" name="abc">Female</input></td>
+        </tr>
+
+        <tr>
+            <td>state : </td>
+            <td>
+                <select>
+
+                    <option>Andhra Pradesh<br></option>
+                    <option>Arunachal Pradesh</option>
+                    <option>Assam</option>
+                    <option>Bihar</option>
+                    <option>Chhattisgarh</option>
+                    <option>Goa</option>
+                    <option>Gujarat</option>
+                    <option>Haryana</option>
+                    <option>Himachal Pradesh</option>
+                    <option>Jammu and Kashmir</option>
+                    <option>Jharkhand</option>
+                    <option>Karnataka</option>
+                    <option>Kerala</option>
+                    <option>Madhya Pradesh</option>
+                    <option>Maharashtra</option>
+                    <option>Manipur</option>
+                    <option>Meghalaya</option>
+                    <option>Mizoram</option>
+                    <option>Nagaland</option>
+                    <option>Odisha</option>
+                    <option>Punjab</option>
+                    <option>Rajasthan</option>
+                    <option>Sikkim</option>
+                    <option>Tamil Nadu</option>
+                    <option>Telangana</option>
+                    <option>Tripura</option>
+                    <option selected> outher</option>
+            </td>
+                </select> 
+        </tr>
+        <tr>
+            <td>District :</td>
+            <td>
+                <select>
+                    <option>Bagalkot</option>
+                    <option>Ballari</option>
+                    <option>Bangalore Rural</option>
+                    <option>Belagavi</option>
+                    <option>Bengaluru </option>
+                    <option>Bidar </option>                        
+                    <option>Chamarajanagar </option>
+                    <option> Chikballapur </option>                       
+                    <option> Chikkamagaluru </option>                      
+                    <option> Chitradurga </option>                       
+                    <option> Dakshina Kannada </option>                        
+                    <option>Davanagere </option>                       
+                    <option>Dharwad </option>
+                    <option>Gadag </option>
+                    <option> Hassan </option>
+                    <option>Haveri </option>
+                    <option> kalaburagi</option>
+                    <option> Kodagu </option>
+                    <option> Kolar </option>
+                    <option>  Koppal </option>
+                    <option>  Mandya </option>
+                    <option>  Mysuru </option>
+                    <option>  Raichur </option>
+                    <option> Ramanagara </option>
+                    <option> Shivamogga </option>
+                    <option> Tumakuru </option>
+                    <option> Udupi </option>
+                    <option> Uttara Kannada </option>                        
+                    <option> Vijayapura</option> 
+                    <option>Yadgir </option>
+                    <option selected> other</option>
+                    
+                </select>
+            </td>
+        </tr> 
+    
+    
+    
+    </table> <br> 
+                <input type="checkbox"> I agree to submit <br> <br>
+                <input onclick="f2()" type="submit" >
+                <input type="reset"> <br> <br>
+
+                
+</form>
+    
+        
+</body>
+</html>
+
+ 
+
+
+
+ 
+
+ 
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="d1"></p>
+    <p id="d2"></p>
+    <p id="d3"></p>
+
+
+    <script>
+        let ur= new URLSearchParams(window.location.search)
+
+        
+
+            
+
+        let n=ur.get("name")
+        console.log(n)
+        document.getElementById("d1").innerHTML=n;
+
+        let e=ur.get("email")
+        document.getElementById("d2").innerHTML=e;
+
+        let p=ur.get("pass")
+        document.getElementById("d3").innerHTML=p;
+
+        
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,14 @@
+*{
+    font-size: large;
+
+}
+
+table,th,td{
+    border: 2px solid;
+    border-collapse: collapse;
+}
+
+but{
+
+    border-radius: 50px;
+}

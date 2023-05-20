@@ -1,0 +1,22 @@
+table,th,td{ border: 2px solid;
+            text-align: center;}
+th{ background-color: gray;}
+#a{ background: #e80707;
+    color: white;
+    }
+#b{ padding: 1% ;
+    color: white;
+    text-align: center;
+    background: red;
+    }
+.a{background-color: green;}
+.b{background: rgb(81, 185, 81);}
+.c{background: rgb(135, 219, 133);}
+.e{background: rgb(107, 204, 107);}
+.g{background: rgb(220, 16, 16);}
+.h{background: #e34242;}
+.i{background: #e87575;}
+.j{background: #eb8080;}
+.l{background: #e14949;}
+.m{background: #82eb80;}
+

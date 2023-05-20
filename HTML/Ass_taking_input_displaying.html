@@ -1,0 +1,63 @@
+ 
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ass_taking_input_displaying</title>
+
+        <script>
+
+            function display(){
+
+                var name_1=document.getElementById("name").value;
+                document.getElementById("name1").innerHTML=name_1;
+
+                var email_1=document.getElementById("email").value;
+                document.getElementById("email1").innerHTML=email_1;
+
+                var address_1=document.getElementById("address").value;
+                document.getElementById("address1").innerHTML=address_1;
+
+
+            }
+        </script>
+
+    </head>
+    <body>
+
+        <h1>Taking input and displaying </h1>
+
+        <form >
+
+            <lable> name :</lable>
+            <input id="name" type="name" > <br> <br>
+
+            <label> email :</label>
+            <input id="email" type="email"> <br> <br>
+
+            <label>address</label>
+            <textarea id="address"> </textarea><br> <br>
+
+
+            <button onclick="display()"> click hear to see ur ditels</button>
+
+        </form><br> <br>
+
+        <h3>plz check ur ditals </h3>
+
+        <label>your name is : </label>
+        <p id="name1"> </p>
+        
+
+        <label>your mail id :</label>
+        <p id="email1"></p> 
+
+        <label>your address :</label>
+        <p id="address1"></p>
+        
+    </body>
+    </html>

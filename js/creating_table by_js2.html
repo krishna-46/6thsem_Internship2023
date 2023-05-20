@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating_table by_js2</title>
+    
+</head>
+<body>
+    
+    
+    <p id="name"></p>
+    <p id="email"></p>
+    <p id="age"></p>
+    <p id="address"></p>
+    <p id="sn"></p>
+    <p id="class"></p>
+    <p id="gender"></p>
+    <p id="sub1"></p>
+    <p id="sub2"></p>
+    <p id="sub3"></p>
+    <p id="sub4"></p>
+    <p id="sub5"></p>
+    
+
+    <script>
+        let ur = new URLSearchParams(window.location.search)
+
+            let n= ur.get("name")
+            document.getElementById("name").innerHTML=n
+
+            let e = ur.get("email")
+            document.getElementById("email").innerHTML=e
+
+            let a =ur.get("age")
+            document.getElementById("age").innerHTML=a
+
+            let ad =ur.get("address")
+            document.getElementById("address").innerHTML=ad
+
+            let scn =ur.get("school")
+            document.getElementById("sn").innerHTML=scn
+
+            let cla =ur.get("class")
+            document.getElementById("class").innerHTML=cla
+
+
+            let gen =ur.get("aa")
+            document.getElementById("gender").innerHTML=gen
+
+            let gen1 =ur.get("aa")
+            document.getElementById("gender").innerHTML=gen1
+
+            let sub1 = ur.get("Maths")
+            document.getElementById("sub1").innerHTML=sub1
+
+            let sub2 = ur.get("Science")
+            document.getElementById("sub2").innerHTML=sub2
+
+            let sub3 = ur.get("Sst")
+            document.getElementById("sub3").innerHTML=sub3
+
+            let sub4 = ur.get("Hindi")
+            document.getElementById("sub4").innerHTML=sub4
+
+            let sub5 = ur.get("Kannada")
+            document.getElementById("sub5").innerHTML=sub5
+
+            </script>    
+</body>
+</html>

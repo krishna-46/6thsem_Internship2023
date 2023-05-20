@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-2</title>
+</head>
+<body>
+<!-- 
+    <ul id="unlist">
+        <li>hello</li> 
+
+    </ul> -->
+    
+    <script>
+        
+    let hed=document.createElement("h1")
+        // hed.setAttribute("Id","h")
+        hed.innerHTML="People and Their Ages"
+        document.body.append(hed)
+
+        let arr=    [{name:"Akash",age:18},
+                    {name:"Guru",age:19},
+                    {name:"Bob",age:18}]
+
+
+                    let ul=document.createElement("ul")
+                        document.body.append(ul)
+
+                        let map1=arr.map((a)=>{
+                            let li = document.createElement("li")
+                                ul.append(li)
+                                li.innerHTML=`name :${a.name} , Age :${a.age}`
+                                
+                                
+                        })
+
+
+                        
+    </script>
+</body>
+</html>

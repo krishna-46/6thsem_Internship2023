@@ -1,0 +1,46 @@
+<!DOC<!DOCTYPETYPE html>
+<html>
+<head>
+<title>Page Title</title>
+
+<script>
+function  d1(){   
+	let a=document.getElementsByClassName("aa")[0];  
+    if(a.checked){  					    
+         document.getElementById("ab").innerHTML=a.value;
+}
+let b=document.getElementsByClassName("aa")[1];  
+    if(b.checked){  					    
+         document.getElementById("ac").innerHTML=b.value;
+}
+
+let c=document.getElementsByClassName("bb")[0];  
+    if(c.checked){  					     
+        document.getElementById("ad").innerHTML=c.value;
+}
+
+let d=document.getElementsByClassName("bb")[1];  
+    if(d.checked){  					    
+         document.getElementById("ad").innerHTML=d.value;
+}
+
+
+}
+</script>
+</head>
+<body>
+
+<input class="aa" type="checkbox" value="maths"> maths
+<input class="aa" type="checkbox" value="hindi">hindi
+
+
+
+<input class="bb" type="radio" name="abc" value="yes">yes
+<input class="bb" type="radio" name="abc"value="no">no
+
+<button onclick="d1()">click hear</button>
+<p id="ab"> </p>
+<p id="ac"></p>
+<p id="ad"></p>
+</body>
+</html>

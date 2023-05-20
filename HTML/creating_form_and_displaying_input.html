@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>creating_form_and_displaying_input</title>
+
+
+        <style>
+                h2{
+
+                    color: aliceblue;
+                    background: red;
+                    text-align: center;
+                }
+
+        </style>
+        <script>
+            function by_class() {
+                let n1 = document.getElementsByClassName("name1")[0].value;
+                document.getElementById("d1").innerHTML=n1;
+
+                let n2 = document.getElementsByClassName("phone")[0].value;
+                document.getElementById("d2").innerHTML=n2;
+
+                let n3 = document.getElementsByClassName("email")[0].value;
+                document.getElementById("d3").innerHTML=n3;
+
+                let n4 = document.getElementsByClassName("address")[0].value;
+                document.getElementById("d4").innerHTML=n4;
+                
+                let n5=document.getElementsByClassName("aa")[0];  
+                    if(n5.checked){  					    
+                    document.getElementById("d5").innerHTML=n5.value;
+                }
+
+                let n6=document.getElementsByClassName("aa")[1];  
+                    if(n6.checked){  					    
+                    document.getElementById("d6").innerHTML=n6.value;
+}
+
+                let n7=document.getElementsByClassName("aa")[2];  
+                    if(n7.checked){  					    
+                    document.getElementById("d7").innerHTML=n7.value;
+}
+
+                let n8=document.getElementsByClassName("bb")[0];  
+                    if(n8.checked){  					     
+                     document.getElementById("d8").innerHTML=n8.value;
+}
+
+                let n9=document.getElementsByClassName("bb")[1];  
+                    if(n9.checked){  					    
+                    document.getElementById("d9").innerHTML=n9.value;
+}
+
+
+                let n10 = document.getElementsByClassName("state")[0].value;
+                document.getElementById("d10").innerHTML=n10;
+
+                let n11=document.getElementsByClassName("file")[0].value;
+                document.getElementById("d11").innerHTML=n11;
+
+                
+        }
+        </script>
+    </head>
+<body>
+    
+    <form >
+        <h2 >Plz fill your form</h2>
+
+        <label>name :</label>
+        <input class="name1" type="text" > 
+        <label class="phone"> Phone :</label>
+        <input class="phone" type="number" accept="number"><br> <br>
+        <label>email:</label>
+        <input class="email" type="email"  ><br><br>
+    
+
+        <label>address:</label>
+        <textarea class="address"> </textarea><br> <br>
+        Select your Subject:<br>
+        <input class="aa" type="checkbox" value="maths"> maths
+        <input class="aa" type="checkbox" value="hindi">hindi
+        <input class="aa" type="checkbox" value="science">science <br> <br>
+        Gender:<br>
+        <input class="bb" type="radio" name="abc" value="male">Male
+        <input class="bb" type="radio" name="abc"value="Female">Female  <br> <br>
+
+         select your State: <br>
+        <select class="state">
+            
+            
+            
+            <option>Karnataka</option> 
+            <option>Goa</option>
+            <option>Gujarat</option>
+            <option>Andhra Pradesh</option>
+            <option selected>outher</option>
+        </select> <br> <br>
+
+        <input class="file" type="file" accept="image/*">only jpg<br> <br>
+
+        <button onclick="by_class()"> click hear</button>
+        <input type="reset"> <br>
+
+
+        <a href="https://www.javatpoint.com/html-tutorial">javatpoint</a>
+        
+
+    </form><br>
+
+    output:
+
+    <p id="d1"></p>
+    <p id="d2"></p>
+    <p id="d3"></p>
+    <p id="d4"></p>
+    <p id="d5"></p>
+    <p id="d6"></p>
+    <p id="d7"></p>
+    <p id="d8"></p>
+    <p id="d9"></p>
+    <p id="d10"></p>
+    <p id="d11"></p>
+
+
+    
+    
+</body>
+</html>

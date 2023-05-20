@@ -1,0 +1,69 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    
+}
+
+
+
+body{
+    /* background-image:url("BABY.jpg") ; */
+    background-color: rgb(182, 157, 185);
+}
+
+
+/* th.backg{
+    border: 10px solid rgb(238, 20, 20) !important;
+} */
+h1{background-color: red;
+    color: white;
+    padding: 1% ;
+    text-align: center;}
+/* .abc{
+    color: rgb(224, 54, 94);
+} */
+/* .backg{
+    background-color: cadetblue;
+} */
+table{
+        border:2px solid black ;
+        width: 40%;
+        height  : 50%;
+        float:center;
+        /* border-radius: 90px 10% ;
+         border-top-right-radius: 20px;
+        border-bottom-left-radius: 30px; */
+
+         border-collapse: collapse solid;  
+        /* border-spacing: 0.1cm;   */
+        
+        }
+
+th{
+    color: rgb(20, 9, 1);
+    border: 2px solid;
+    padding:1% color black;
+    
+    
+} 
+
+td{
+    /* border: 2px solid ; */
+    text-align: center;
+}
+#address{
+    font-family: 'Times New Roman'
+}
+
+.a{
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+button{
+    height: 1cm;
+    border-radius: 7px;
+    color: rgb(6, 6, 6);
+    background-color: rgb(0, 149, 255);
+    text-size-adjust: 24px;
+}

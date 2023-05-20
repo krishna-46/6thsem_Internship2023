@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=10">
+  <title>form by table</title>
+  <link rel="stylesheet" type="text/css" href="style_for_form_by_table.css" />
+
+  <!-- <script src="form_by_table_with_js.js"></script> -->
+
+  
+
+
+
+    </script>
+
+</head>
+
+<body>
+    <script>
+        function output_display(){
+  
+  
+          // name
+          let a1=document.getElementsByClassName("name")[0];
+          document.getElementById("data1_name").innerHTML=a1.value; // id="data1_name"
+  
+          // email
+          let a2=document.getElementsByClassName("email")[0];
+          document.getElementById("data2_email").innerHTML=a2.value;  // id="data2_email"
+  
+          //phone no
+          let a3=document.getElementsByClassName("phone")[0];
+          document.getElementById("data3_pno").innerHTML=a3.value; // id="data3_pno"
+  
+          // address
+          let a4=document.getElementsByClassName("address")[0];
+          document.getElementById("data4_address").innerHTML=a4.value; // id="data4_address"
+  
+          // gender male
+          let a5=document.getElementsByClassName("ra")[0];
+          if(a5.checked){ 				     
+          document.getElementById("data5_gender").innerHTML=a5.value; // id="data5_gender"
+          }
+  
+          // gender female
+          let a6=document.getElementsByClassName("ra")[1];
+          if(a6.checked){ 				    
+           document.getElementById("data5_gender").innerHTML=a6.value; // 
+          }
+  
+          // age 1-12
+          let a7=document.getElementsByClassName("age")[0];
+          if(a7.checked){
+              document.getElementById("data6_age").innerHTML=a7.value;  // id="data6_age"  
+          }
+  
+          // age 13-17
+          let a71=document.getElementsByClassName("age")[1];
+          if(a71.checked){
+              document.getElementById("data6_age").innerHTML=a71.value;  // id="data6_age"
+          }
+  
+          // age 18-20
+          let a72=document.getElementsByClassName("age")[2];
+          if(a72.checked){
+              document.getElementById("data6_age").innerHTML=a72.value; // id="data6_age"
+          }
+  
+          // age 21-64
+          let a73=document.getElementsByClassName("age")[3];
+          if(a73.checked){
+              document.getElementById("data6_age").innerHTML=a73.value; // id="data6_age"
+          }
+  
+          // sub maths
+          let a8=document.getElementsByClassName("sub")[0];
+          if(a8.checked){
+              document.getElementById("data7_sub").innerHTML=a8.value; // id="data7_sub"
+          }
+  
+          // sub science
+          let a81=document.getElementsByClassName("sub")[1];
+          if(a81.checked){
+              document.getElementById("data7_sub").innerHTML=a81.value; // id="data7_sub"
+          }
+  
+          // sub histry
+          let a82=document.getElementsByClassName("sub")[2];
+          if(a82.checked){
+              document.getElementById("data7_sub").innerHTML=a82.value; // id="data7_sub"
+          }
+  
+          // state
+          let a9=document.getElementsByClassName("state")[0];
+          document.getElementById("data8_state").innerHTML=a9.value;  // id="data8_state"
+  
+          // let a9=document.getElementsByClassName("dist")[0];
+          // document.getElementById("data8_dist").innerHTML=a9.value;
+  
+          }
+          </script>
+
+  <h1>Form in table </h1>
+  <h2 id="aa" class="abc backg">welcome to techify india</h2>
+  <caption> Please give ur informaction below </caption> <br> <br>
+
+
+  <form >
+      <table>
+
+
+        <th colspan="2">Fill your details</th>
+            <tr>
+              <th class="abc backg">label</th>
+              <th class="abc"> input box</th>
+            </tr>
+      
+          <!-- Name -->
+            <tr>            
+                <td> name : </td>
+                <td><input class="name" type="text" placeholder="Enter your name"></td>
+            </tr>
+
+          <!-- Email -->
+            <tr>           
+                <td>email</td>
+                <td><input class="email" type="email :" placeholder="Enter your Email Id"></td>
+            </tr>
+      
+          <!-- Phone no -->
+            <tr>            
+                <td>Phone no : </td>
+                <td><input class="phone" type="number" accept="number" placeholder="Enter your Phone No"></td>
+            </tr>
+      
+          <!-- Address -->
+            <tr>
+                <td>address :</td>
+                <td><textarea class="address"></textarea></td>
+            </tr>
+
+          <!-- gender -->
+            <tr>
+                <td>gender : </td>
+                <td><input class="ra" type="radio" name="abc" value="male">Male</input>
+                <input class="ra" type="radio" name="abc" value="female">Female
+                </td>
+            </tr>
+
+          <!-- age -->
+            <tr>
+                <td> Select your age :</td>
+                <td><input class="age" type="radio" name="xyz" value="your Child">1-12
+                    <input class="age" type="radio" name="xyz" value="your Teenager">13-17
+                    <input class="age" type="radio" name="xyz" value="your PreAdult">18-20
+                    <input class="age" type="radio" name="xyz" value="your Adult">21-64
+                </td> 
+            </tr>
+
+            <!--subjects-->
+            <tr>
+                <td> Select your fav subject :</td>
+                <td><input class="sub" type="checkbox" value="Maths">maths
+                    <input class="sub" type="checkbox" value="Science">Science
+                    <input class="sub" type="checkbox" value="Histry">Histry</td>
+            </tr>
+      
+          <!--  State -->
+            <tr>
+                <td>state : </td>
+                <td>
+          <select class="state">
+
+            <option>Andhra Pradesh<br></option>
+            <option>Arunachal Pradesh</option>
+            <option>Assam</option>
+            <option>Bihar</option>
+            <option>Chhattisgarh</option>
+            <option>Goa</option>
+            <option>Gujarat</option>
+            <option>Haryana</option>
+            <option>Himachal Pradesh</option>
+            <option>Jammu and Kashmir</option>
+            <option>Jharkhand</option>
+            <option>Karnataka</option>
+            <option>Kerala</option>
+            <option>Madhya Pradesh</option>
+            <option>Maharashtra</option>
+            <option>Manipur</option>
+            <option>Meghalaya</option>
+            <option>Mizoram</option>
+            <option>Nagaland</option>
+            <option>Odisha</option>
+            <option>Punjab</option>
+            <option>Rajasthan</option>
+            <option>Sikkim</option>
+            <option>Tamil Nadu</option>
+            <option>Telangana</option>
+            <option>Tripura</option>
+            <!-- <option selected> Select</option> -->
+        </td>
+                </select>
+            </tr>
+      <!-- <tr>
+            <td>District :</td>
+            <td>
+                <select class="dist">
+                    <option>Bagalkot</option>
+                    <option>Ballari</option>
+                    <option>Bangalore Rural</option>
+                    <option>Belagavi</option>
+                    <option>Bengaluru </option>
+                    <option>Bidar </option>                        
+                    <option>Chamarajanagar </option>
+                    <option> Chikballapur </option>                       
+                    <option> Chikkamagaluru </option>                      
+                    <option> Chitradurga </option>                       
+                    <option> Dakshina Kannada </option>                        
+                    <option>Davanagere </option>                       
+                    <option>Dharwad </option>
+                    <option>Gadag </option>
+                    <option> Hassan </option>
+                    <option>Haveri </option>
+                    <option> kalaburagi</option>
+                    <option> Kodagu </option>
+                    <option> Kolar </option>
+                    <option>  Koppal </option>
+                    <option>  Mandya </option>
+                    <option>  Mysuru </option>
+                    <option>  Raichur </option>
+                    <option> Ramanagara </option>
+                    <option> Shivamogga </option>
+                    <option> Tumakuru </option>
+                    <option> Udupi </option>
+                    <option> Uttara Kannada </option>                        
+                    <option> Vijayapura</option> 
+                    <option>Yadgir </option>
+                    <option selected> Select</option>
+                    
+                </select>
+            </td>
+        </tr>  -->
+
+
+
+      </table> <br>
+                    <input type="checkbox"> I agree to submit <br> <br>
+
+                    <button onclick="output_display()">click hear to confirm your details</button>
+                    <input type="submit">
+
+                    <input type="reset"> <br> <br>
+
+
+</form>
+
+  <h4> Plz check your Details </h4>
+  Your Name : 
+  <p id="data1_name"></p> <!--  classnme = "name" -->
+
+  Your Email Id :
+  <p id="data2_email"></p> <!--  classnme = "email" -->
+
+  Your Phone no :
+  <p id="data3_pno"></p> <!--  classnme = "phone" -->
+
+  Your Address :
+  <p id="data4_address"></p> <!--  classnme = "address" -->
+
+  Your Gender :
+  <p id="data5_gender"></p> <!--  classnme = "gender" [0],[1] -->
+
+  Your Age :
+  <p id="data6_age"></p> <!--  classnme = "age" [0],[1],[2],[3] -->
+
+  Your fev Subject :
+  <p id="data7_sub"></p>  <!--  classnme = "sub" [0],[1],[2] -->
+
+  Your State :
+  <p id="data8_state"></p> <!-- classname= "state" -->
+  <!-- <p id="data8_dist"></p> -->
+
+
+</body>
+
+</html>

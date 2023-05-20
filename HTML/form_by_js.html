@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <script>
+        function by_class() {
+            let name_1 = document.getElementsByClassName("abc")[0];
+            document,getElementById("displaying")[0].innreHTML=name_1;
+        }
+    </script>
+</head>
+<body>
+    
+    <form >
+        <h2 >login Detail</h2>
+
+        <label>name :</label>
+        <input class="name" type="name"> <br> <br>
+        <label> Phone :</label>
+        <input class="phone" type="number" accept="number"><br> <br>
+        <label>email:</label>
+        <input class="email" type="email"  ><br><br>
+    
+
+        <label>address:</label>
+        <textarea class="address"> </textarea><br> <br>
+        Subject:<br>
+        <input class="check1" type="checkbox" >maths<br>
+        <input class="check2" type="checkbox" >English<br>
+        <input class="check3" type="checkbox" >hindi<br> <br>
+        Gender:<br>
+        <input class="radio1" type="radio" name="abc">Male<br>
+        <input class="radio2" type="radio" name="abc">Female<br> <br>
+
+         select your State: <br>
+        <select class="state">
+            
+            
+            
+            <option>Karnataka</option> 
+            <option>Goa</option>
+            <option>Gujarat</option>
+            <option>Andhra Pradesh</option>
+            <option selected>outher</option>
+        </select> <br> <br>
+
+        <input type="file" accept="image/*">only jpg<br> <br>
+
+        <button onclick="by_class()"> click hear</button>
+        <input type="reset"> <br>
+
+
+        <a href="https://www.javatpoint.com/html-tutorial">javatpoint</a>
+        
+
+    </form>
+
+    <p id="displaying"></p>
+
+
+    
+    
+</body>
+</html>
