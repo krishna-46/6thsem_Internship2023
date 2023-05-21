@@ -18,8 +18,8 @@
 
 class BankAccount :
 
-    # account_number=int(8217700977)
-    # balance=float(0.0)
+    account_number=int()
+    balance=float(0.0)
 
 
     def __init__(self,account_number):
@@ -76,3 +76,5 @@ print(f"Account No :-{Ac2.account_number} :" , "   Debited :", w2, "Credited : "
 
     # def deposit(self,amount):
     #     self.amount=
+
+
