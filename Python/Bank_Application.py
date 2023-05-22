@@ -10,7 +10,7 @@
 # Write the BankAccount class implementation and provide a sample code snippet that demonstrates the usage of the class by creating instances of BankAccount and performing various operations on them.
 
 # Feel free to add any additional helper methods or attributes to enhance the functionality of the BankAccount class if you wish.
-
+#.......................................................................................
 
 class BankAccount :
 
@@ -26,7 +26,7 @@ class BankAccount :
         self.balance +=amount
 
         if self.deposit:
-            print(f"Amount deposited successfully to - {self.balance}")
+            print(f"Amount deposited successfully to - {self.account_number}",f"balance : {self.balance}")
         else:
             print("You have canceld Thank You!")
         
@@ -55,13 +55,13 @@ for i in range(num):
     
     if opt == "1":
             deposit_amount = float(input("Enter the amount to deposit: "))
-            BankAccount.deposit(deposit_amount)
+            num1.deposit(deposit_amount)
     elif opt == "2":
             withdrawal_amount = int(input("Enter the amount to withdraw: "))
-            BankAccount.withdraw(withdrawal_amount)
+            num1.withdraw(withdrawal_amount)
 
     elif opt == "3":
-            print(f"Your balance is : {BankAccount.get_balance()}")
+            print(f"Your balance is : {num1.get_balance()}")
     elif opt == "9":
             print("Transaction canceled")
         
@@ -69,9 +69,9 @@ for i in range(num):
             print("Invalid choice")
             break
 
-    print(f"Account number:{BankAccount.account_numbers} .Current balance:{num1.get_balance}")
+    print(f"Account number:{num1.account_number} ",f"Current balance:{num1.get_balance()}")
 
-
+#...........................................................................................................
        
 # bankaccount=[]
 
@@ -103,6 +103,8 @@ for i in range(num):
 # print("Current balance:", account.get_balance())
 # print("Bank account numbers:", bankaccount)
 ######################################################################################
+
+#.......................................................................................
 # class BankAccount: 
 #     account_numbers=1000
 #     def __init__(self, account_number):
@@ -123,7 +125,37 @@ for i in range(num):
 #     def get_balance(self):
 #         return self.balance
 
+# bankaccount=[]
 
+# account_numbers=int(input("Enter account number:"))
+# # account_number =1000
+
+# account=BankAccount(account_numbers)
+# print(f"Account created successfully: {account_numbers}")
+# bankaccount.append(account_numbers)
+
+# for i in range(account_numbers):
+#     print(f"Account as created successfully: {account_numbers}")
+#     bankaccount.append(account_numbers)
+
+# opt =input( "Enter choice (1-deposit,2-withdrow,9-cancal)" )
+# if opt == "1":
+#     deposit_amount = float(input("Enter the amount to deposit: "))
+#     account.deposit(deposit_amount)
+# elif opt == "2":
+#     withdrawal_amount = float(input("Enter the amount to withdraw: "))
+#     account.withdraw(withdrawal_amount)
+
+# elif opt == "9":
+#     print("Transaction cancelled")
+# else:
+#     print("Invalid choice")
+
+# print(f"Account number :{account_numbers}",f"Diposit : {account.deposit}")
+# print("Current balance:", account.get_balance())
+# print("Bank account numbers:", bankaccount)
+
+#..............................................................................
 
         
     
