@@ -1,7 +1,8 @@
 import cv2
 import os
 
-h=cv2.CascadeClassifier('haarcascade_frontalface_default.xml') # read the face data
+# h=cv2.CascadeClassifier('haarcascade_frontalface_default.xml') # read the face data
+h=cv2.CascadeClassifier('haarcascade_eye.xml') # read the face data
 cam = cv2.VideoCapture(0) # accesss the camera
 fou=cv2.VideoWriter_fourcc(*"XVID") # video formating code
 rec=False
@@ -33,9 +34,9 @@ while True:
         video.write(f)
 
     if cv2.waitKey(2) & 0xff==ord("p"):
-        cv2.imwrite(f"photo{len(os.listdir()):04d}.jpg",f
+        cv2.imwrite(f"photo{len(os.listdir()):04d}.jpg",f)
         print("photo capturedxx")
-    i50-0 cv2.waitKey(2) & 0xff==ord("qu"):
+        i50-0 cv2.waitKey(2) & 0xff==ord("q"):
         break
 
 cam.release()

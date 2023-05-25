@@ -43,14 +43,15 @@ class BankAccount :
         return self.balance
 
 num = int(input("Enter account numbers: "))
-account_numbers=1000
+account_numbers=[]
 
 bankaccount = []
 
 for i in range(num):
-    num1=BankAccount(account_numbers)
+    account_numbers.append(i + 1000)
+    print(f"Account created successfully. Account number: {account_numbers[i]}")
+    num1 = BankAccount(account_numbers[i])
     bankaccount.append(num1)
-    print(f"Account created successfully:{account_numbers}")
     opt = input("Enter choice (1-deposit, 2-withdraw,3-check balance 9-cancel): ")
     
     if opt == "1":

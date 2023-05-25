@@ -1,13 +1,13 @@
 import cv2
 import numpy as np
 
-lr= {'red':(166,84,141),'green':(25,52,72),'blue':(97,100,117),'yellow':(23,59,119),'orange':(255, 191, 0),'pink':(255,0,255),'skin':(255,195,170)}
+lr= {'red':(166,84,141),'green':(25,52,72),'blue':(97,100,117),'yellow':(23,59,119),'orange':(25, 255, 255),'pink':(255,0,255),'skin':(255,195,170)}
 
-ur={'red':(186,255,255),'green':(102,255,255),'blue':(117,255,255),'yellow':(54,255,255),'orange':(255,128,0),'pink':(255, 0, 128),'skin':(45,34,30)}
+ur={'red':(186,255,255),'green':(102,255,255),'blue':(117,255,255),'yellow':(54,255,255),'orange':(50, 255, 255),'pink':(255, 0, 128),'skin':(45,34,30)}
 
-color_names={'red':(0,0,255),'green':(102,255,255),'blue':(117,255,255),'yellow':(54,255,255),'orange':(255,128,0),'pink':(255,0,128),'skin':(255,206,180)}
+color_names={'red':(0,0,255),'green':(102,255,255),'blue':(117,255,255),'yellow':(54,255,255),'orange':(0, 165, 255),'pink':(255,0,128),'skin':(255,206,180)}
 
-img = cv2.imread('test.jpg')
+img = cv2.imread('color.png')
 
 # Hue Saturation Value  
 hsv = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
