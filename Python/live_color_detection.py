@@ -31,7 +31,7 @@ while True:
             if area > 1000:
                 x,y,a,b = cv2.boundingRect(cnt)
                 cv2.rectangle(frame,(x,y),(x+a , y+b),color_names[color_name],2)
-                cv2.putText(frame , color_name , (x,y+20),cv2.FONT_HERSHEY_SIMPLEX , 0.75, color_names[color_name],2)
+                cv2.putText(frame , color_names , (x,y+20),cv2.FONT_HERSHEY_SIMPLEX , 0.75, color_names[color_name],10)
                 
     cv2.imshow("Image",frame)
     if cv2.waitKey(10) & 0xFF==ord("q"):
@@ -79,3 +79,7 @@ cv2.destroyAllWindows()
 # # Release the video capture and destroy all windows
 # cap.release()
 # cv2.destroyAllWindows()
+
+
+
+

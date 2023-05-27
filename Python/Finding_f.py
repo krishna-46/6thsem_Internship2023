@@ -2,7 +2,9 @@ import cv2
 import os
 
 
-haarcas = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+# haarcas = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+# haarcas = cv2.CascadeClassifier('haarcascade_eye.xml')
+haarcas = cv2.CascadeClassifier('haarcascade_smile.xml')
 cam= cv2.VideoCapture(0)
 # fou=cv2.VideoWriter_fourcc(*"XVID")
 
@@ -21,7 +23,7 @@ while True:
     if cv2.waitKey(2) & 0xff==ord("p"):
         cv2.imwrite(f"photo{len(os.listdir()):04d}.jpg",f)
         print("photo capturedxx")
-    if cv2.waitKey(2) & 0xff==ord("q"):
+    if cv2.waitKey(1) & 0xff==ord("q"):
         break
 
 cam.release()

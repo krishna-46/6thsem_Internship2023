@@ -17,7 +17,7 @@ while True:
 
     #drow the rectangle around the face   
     for (x,y,a,b) in hum:
-        cv2.rectangle(f,(x,y),(x+a,y+b),(255,0,128),10)
+        cv2.rectangle(f,(x,y),(x+a,y+b),(255,0,128),5)
 
     cv2.imshow("camra",f) # display the window.
     # wait=cv2.waitKey(2)
@@ -36,8 +36,8 @@ while True:
     if cv2.waitKey(2) & 0xff==ord("p"):
         cv2.imwrite(f"photo{len(os.listdir()):04d}.jpg",f)
         print("photo capturedxx")
-        i50-0 cv2.waitKey(2) & 0xff==ord("q"):
-        break
+        if cv2.waitKey(2) & 0xff==ord("q"):
+            break
 
 cam.release()
 cv2.destroyAllWindows()
