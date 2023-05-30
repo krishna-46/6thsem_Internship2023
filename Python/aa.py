@@ -1,28 +1,67 @@
-import os
-from twilio.rest import Client
-import random
+# from transformers import ChatGPT
 
-# Your Twilio account SID and auth token
-account_sid = 'YOUR_ACCOUNT_SID'
-auth_token = 'YOUR_AUTH_TOKEN'
+class BankAccount:
+    def __init__(self, account_number):
+        self.account_number = account_number
+        self.balance = 0.0
 
-# The Twilio phone number you want to use for sending SMS
-twilio_phone_number = 'YOUR_TWILIO_PHONE_NUMBER'
+    def deposit(self, amount):
+        self.balance += amount
+        print(f"Amount deposited successfully to - {self.account_number}. Balance: {self.balance}")
 
-# The recipient phone number
-recipient_phone_number = 'RECIPIENT_PHONE_NUMBER'
+    def withdraw(self, amount):
+        if self.balance >= amount:
+            self.balance -= amount
+            print(f"Amount withdrawn successfully from - {self.account_number}")
+        else:
+            print(f"Insufficient funds in Account: {self.account_number}")
 
-# Generate a random 6-digit OTP
-otp = random.randint(100000, 999999)
+    def get_balance(self):
+        return self.balance
 
-# Set up the Twilio client
-client = Client(account_sid, auth_token)
+def ai_assistant():
+    assistant = ChatGPT("gpt-3.5-turbo")
 
-# Send the OTP via SMS
-message = client.messages.create(
-    to=recipient_phone_number,
-    from_=twilio_phone_number,
-    body=f'Your OTP is {otp}')
+    print("Welcome to the AI Banking Assistant!")
+    while True:
+        user_input = input("How can I assist you today? (Type 'exit' to quit) ")
 
-# Print the message SID
-print(f'Message SID: {message.sid}')
+        if user_input.lower() == "exit":
+            print("Thank you for using the AI Banking Assistant. Goodbye!")
+            break
+
+        response = assistant.generate(user_input)
+        print(response.choices[0].text.strip())
+
+num = int(input("Enter the number of accounts: "))
+account_numbers = 1000
+bank_accounts = []
+
+for i in range(num):
+    acc_num = account_numbers + (i + 1)
+    account = BankAccount(acc_num)
+    bank_accounts.append(account)
+
+    print(f"Account created successfully: {acc_num}")
+    print()
+    opt = input("Enter choice (1-deposit, 2-withdraw, 3-check balance, 9-cancel, AI-assistant): ")
+
+    if opt == "1":
+        deposit_amount = float(input("Enter the amount to deposit: "))
+        account.deposit(deposit_amount)
+    elif opt == "2":
+        withdrawal_amount = int(input("Enter the amount to withdraw: "))
+        account.withdraw(withdrawal_amount)
+    elif opt == "3":
+        print(f"Your balance is: {account.get_balance()}")
+    elif opt == "9":
+        print("Transaction canceled")
+    elif opt.lower() == "ai-assistant":
+        ai_assistant()
+    else:
+        print("Invalid choice")
+        break
+
+    print(f"Account number: {account.account_number}, Current balance: {account.get_balance()}")
+    print()
+
