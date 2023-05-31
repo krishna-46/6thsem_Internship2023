@@ -27,21 +27,23 @@ while True :
     human=file.detectMultiScale(gray,1.3,4)
 
     #Drawing rectangle around face
+    # (0,0,255) color to rectangle ,  2 is how many face to detect
     for (x,y,a,b) in human:
         cv2.rectangle(frame,(x,y),(x+a,y+b),(0,0,255),2)
         #Displaying camera feed
         cv2.imshow("camera",frame)
-
-    if cv2.waitKey(1) & 0xff == ord("r"):
+# 
+    # if cv2.waitKey(1) & 0xff == ord("r"):
+    
         # Saving the current frame as an image
-        current_time = datetime.datetime.now().strftime("%Y-%m-%d %H-%M-%S")
-        cv2.imwrite(f"{current_time}.jpg", frame)
+        img_save = datetime.datetime.now().strftime("%Y-%m-%d %H-%M-%S")
+        cv2.imwrite(f"{img_save}.jpg", frame)
 
 
         # cv2.imwrite(f"{len(datetime.listdir()):%Y-%m-%d %H-%M-%S}.jpg",frame)
         # img_save = cv2.VideoWriter(f"vid{len(os.listdir()):03d}.jpg", formatting, 20.0, (640, 480))
 
-    if cv2.waitKey(2) & 0xff == ord("s"):
+    if cv2.waitKey(1) & 0xff == ord("s"):
         break
 
 camera.release()
