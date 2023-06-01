@@ -9,8 +9,6 @@ file = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 # Opening camera
 camera = cv2.VideoCapture(0)
 
-# Setting up video formatting
-# formatting = cv2.VideoWriter_fourcc(*"XVID")
 
 # Checking Camera access
 # if not camera.isopened():
@@ -24,7 +22,9 @@ while True :
     gray=cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
 
     # Detecting human face
-    human=file.detectMultiScale(gray,1.3,4)
+    #(1.3 in this case) specifies how much the image size is reduced at each image scale
+    # (4 in this case) specifies how many neighbors each candidate rectangle should have to retain it (how many face)
+    human=file.detectMultiScale(gray,2.0,4)
 
     #Drawing rectangle around face
     # (0,0,255) color to rectangle ,  2 is how many face to detect
@@ -38,10 +38,6 @@ while True :
         # Saving the current frame as an image
         img_save = datetime.datetime.now().strftime("%Y-%m-%d %H-%M-%S")
         cv2.imwrite(f"{img_save}.jpg", frame)
-
-
-        # cv2.imwrite(f"{len(datetime.listdir()):%Y-%m-%d %H-%M-%S}.jpg",frame)
-        # img_save = cv2.VideoWriter(f"vid{len(os.listdir()):03d}.jpg", formatting, 20.0, (640, 480))
 
     if cv2.waitKey(1) & 0xff == ord("s"):
         break
