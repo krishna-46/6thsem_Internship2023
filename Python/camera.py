@@ -1,7 +1,7 @@
 import cv2
 import os
 
-h=cv2.CascadeClassifier('haarcascade_frontalface_default.xml') # read the face data
+# h=cv2.CascadeClassifier('haarcascade_frontalface_default.xml') # read the face data
 # h=cv2.CascadeClassifier('haarcascade_eye.xml') # read the face data
 cam = cv2.VideoCapture(0) # accesss the camera
 fou=cv2.VideoWriter_fourcc(*"XVID") # video formating code

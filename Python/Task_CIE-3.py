@@ -8,6 +8,7 @@ file = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 
 # Opening camera
 camera = cv2.VideoCapture(0)
+time=10
 
 
 # Checking Camera access
